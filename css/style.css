@@ -26,3 +26,12 @@ h1 {
 .xbtn:hover {
   color: red;
 }
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+#cartContents {
+  font-family: "Rubik", sans-serif;
+}

@@ -20,7 +20,7 @@ function renderCart() {
   showCart();
 }
 
-// TODO: Remove all of the rows (tr) in the cart table (tbody)
+// DONE: Remove all of the rows (tr) in the cart table (tbody)
 function clearCart() {
   const tbodyElem = document.querySelector('tbody');
   while(tbodyElem.firstChild) {
@@ -28,10 +28,10 @@ function clearCart() {
   }
 }
 
-// TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
+// DONE: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {
 
-  // DONE?: Find the table body
+  // DONE: Find the table body
   const tbodyElem = document.querySelector('tbody');
       
 
@@ -71,12 +71,12 @@ function removeItemFromCart(event) {  //this is called when delete link is click
   const xbtn = id.slice(0, 8);
   const index = id.slice(-1);  
   
-  // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
+  // DONE: When a delete link is clicked, use cart.removeItem to remove the correct item
   if (xbtn === 'x-button') {
     cart.removeItem(index);
-    // TODO: Save the cart back to local storage
+    // DONE: Save the cart back to local storage
     cart.saveToLocalStorage();
-    // TODO: Re-draw the cart table
+    // DONE: Re-draw the cart table
     renderCart();
   }
 }
