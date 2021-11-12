@@ -1,7 +1,7 @@
 /* TODO: Make it awesome */
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-h1, h2, h3, h4, h5, p, a, label, li, input, legend {
+h1, h2, h3, h4, h5, p, a, label, li, input, legend, th {
     font-family: 'Rubik', sans-serif;
     margin-left:3rem;
 }

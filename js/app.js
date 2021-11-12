@@ -1,5 +1,5 @@
 'use strict';
-// 22/24 TODOs left
+// 21/24 TODOs left
 
 // Cart constructor.
 const Cart = function(items) {
