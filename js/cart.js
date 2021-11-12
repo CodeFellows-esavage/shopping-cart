@@ -34,16 +34,16 @@ function showCart() {
       
 
 
-  // TODO: Iterate over the items in the cart
+  // DONE: Iterate over the items in the cart
   for (let i = 0; i < 3; i += 1){
       // DONE: Create a TR
   const trElem = document.createElement('tr');
   tbodyElem.appendChild(trElem);
-  // TODO: Create a TD for the delete link, quantity,  and the item
+  // DONE: Create a TD for the delete link, quantity,  and the item
 
   const tdELem0 = document.createElement('td');
   trElem.appendChild(tdELem0);
-  tdELem0.setAttribute('class', 'x-button');
+  tdELem0.setAttribute('id', `x-button${i}`);
   tdELem0.textContent = 'X-Button';
 
   const tdELem1 = document.createElement('td');
@@ -59,12 +59,12 @@ function showCart() {
   
 
 
-  // TODO: Add the TR to the TBODY and each of the TD's to the TR
+  // DONE: Add the TR to the TBODY and each of the TD's to the TR
 
 }
 
-function removeItemFromCart(event) {
-
+function removeItemFromCart(event) {  //this is called when delete link is clicked
+    cart.removeItemFromCart(Cart)
   // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
   // TODO: Save the cart back to local storage
   // TODO: Re-draw the cart table
