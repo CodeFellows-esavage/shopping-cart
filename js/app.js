@@ -17,7 +17,7 @@ Cart.prototype.addItem = function(product, quantity) {
 Cart.prototype.saveToLocalStorage = function() {
   // DONE: Fill in this instance method to save the contents of the cart to localStorage
   // convert items into string
-  const cartStorage = JSON.stringify(this);
+  const cartStorage = JSON.stringify(this.items);
   localStorage.setItem('cartKey', cartStorage);
   // set to local storage
 };
