@@ -23,15 +23,81 @@ h1 {
   margin-bottom: 1rem;
 }
 
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  width: 840px;
+  display: block;
+  margin: 0 auto;
+}
+
+body > header {
+  background-color: #067bc2;
+  border-radius: 8px;
+}
+
+main {
+  width: 840px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  width: 840px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .xbtn:hover {
   color: red;
 }
 
 nav ul {
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
-#cartContents {
-  font-family: "Rubik", sans-serif;
+nav ul li {
+  display: block;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+}
+
+#cart {
+  display: block;
+  width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#cart tr:nth-child(even) {
+  background-color: #067ac239;
+}
+#cart thead {
+  background-color: #067bc2;
+  color: aliceblue;
+}
+
+table,
+tr {
+  border: 2px solid black;
+  border-collapse: collapse;
+  border-radius: 8px;
+}
+
+th {
+  width: 280px;
+}
+
+fieldset {
+  border-radius: 8px;
 }
